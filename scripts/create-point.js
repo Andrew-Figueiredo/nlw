@@ -2,7 +2,7 @@
 const populateUFs = () => {
     const ufSelect = document.querySelector("select[name=uf]")
 
-    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
         .then(res => res.json() )
         .then(states => {
 
@@ -23,7 +23,7 @@ const getCities = (event) => {
 
     stateInput.value = event.target.options[event.target.selectedIndex].text
 
-    const url = ` https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/distritos `
+    const url = ` https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/distritos?orderBy=nome `
 
     citySelect.innerHTML = "<option value>Selecione a Cidade</option>"
     citySelect.disabled = true
