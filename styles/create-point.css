@@ -23,7 +23,7 @@
 
 #page-create-point header a span {
     margin-right: 16px;
-    background-image: url('../assets/arrow-left.svg') ;
+    background-image: url("../assets/arrow-left.svg");
 
     display: flex;
 
@@ -41,9 +41,7 @@ form {
     border-radius: 8px;
 
     min-width: 730px;
-
 }
-
 
 form h1 {
     font-size: 36px;
@@ -56,7 +54,7 @@ form fieldset {
 }
 
 form legend {
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
 }
 
 form legend h2 {
@@ -69,7 +67,6 @@ form .field {
     flex-direction: column;
 
     margin-bottom: 24px;
-
 }
 
 form .field-group {
@@ -100,7 +97,6 @@ form label {
 
 form .field-group .field + .field {
     margin-left: 24px;
-
 }
 
 form button {
@@ -118,7 +114,7 @@ form button {
 
     margin-top: 40px;
 
-    transition: background-color 400ms ;
+    transition: background-color 400ms;
 }
 
 form button:hover {
@@ -166,7 +162,6 @@ form button:hover {
 .items-grid li.selected {
     background: #e1faec;
     border: 7px solid #34cb79;
-
 }
 
 .items-grid li img,

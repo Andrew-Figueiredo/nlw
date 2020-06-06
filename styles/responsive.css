@@ -1,9 +1,8 @@
-
 @media (max-width: 900px) {
     #page-home {
-        background-position-x: 70vw ;
+        background-position-x: 70vw;
     }
-    
+
     #page-home .content {
         align-items: center;
         text-align: center;
@@ -15,7 +14,6 @@
 
         left: 50%;
         transform: translateX(-50%);
-
     }
 
     #page-home main {
@@ -29,19 +27,16 @@
     #page-search-results .cards img {
         height: 250px;
     }
-
 }
 
 @media (min-width: 1700px) {
     #page-home {
-        background-position-x: 40vw ;
+        background-position-x: 40vw;
     }
-
 }
 
 @media (max-height: 750px) {
     #page-home {
-        background-position-y: 200px ;
+        background-position-y: 200px;
     }
-
 }
