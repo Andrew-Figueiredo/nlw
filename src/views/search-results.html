@@ -1,58 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resutlado da Pesquisa</title>
+{% extends "./partials/layout.html" %}
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap"
-            rel="stylesheet"
-        />
+{% set pageId = "page-search-results" %}
 
-        <link rel="stylesheet" href="/styles/main.css" />
-        <link rel="stylesheet" href="/styles/search-results.css" />
+{% block title %}
 
-        <link rel="stylesheet" href="/styles/responsive.css" />
-    </head>
+    <title>Resutlado da Pesquisa</title>
 
-    <body>
-        <div id="page-search-results">
-            
-            {% include "partials/page-header.html" %}
+{% endblock title %}
 
-            <main>
-                <h4><strong>2 pontos</strong> encontrados</h4>
+{% block styles %}
 
-                <div class="cards">
-                    <div class="card">
-                        <img
-                            src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-                            alt="Colectoria"
-                        />
-                        <h1>Colectoria</h1>
-                        <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                        <p>
-                            Rio do Sul, Santa Catarina <br />
-                            Guilherme Gemballa, Jardin América <br />
-                            Nº 260
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img
-                            src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80"
-                            alt="Papersider"
-                        />
-                        <h1>Papersider</h1>
-                        <h3>Papéis e Papelão</h3>
-                        <p>
-                            Rio do Sul, Santa Catarina <br />
-                            Guilherme Gemballa, Jardin América <br />
-                            Nº 260
-                        </p>
-                    </div>
-                </div>
-            </main>
+    <link rel="stylesheet" href="/styles/search-results.css"/>
+
+{% endblock styles %}
+
+{% block content %}
+
+    {% include "partials/page-header.html" %}
+
+    <main>
+        <h4>
+            <strong>2 pontos</strong>
+            encontrados</h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="Colectoria"/>
+                <h1>Colectoria</h1>
+                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gemballa, Jardin América
+                    <br/>
+                    Nº 260
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80" alt="Papersider"/>
+                <h1>Papersider</h1>
+                <h3>Papéis e Papelão</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gemballa, Jardin América
+                    <br/>
+                    Nº 260
+                </p>
+            </div>
         </div>
-    </body>
-</html>
+    </main>
+
+{% endblock content %}

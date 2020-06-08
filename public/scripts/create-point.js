@@ -22,7 +22,7 @@ const getCities = (event) => {
 
     stateInput.value = event.target.options[event.target.selectedIndex].text;
 
-    const url = ` https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/distritos?orderBy=nome `;
+    const url = ` https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome `;
 
     citySelect.innerHTML = "<option value>Selecione a Cidade</option>";
     citySelect.disabled = true;
